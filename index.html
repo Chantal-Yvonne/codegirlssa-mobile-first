@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/style/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <title>Codegirls SA</title>
+
+</head>
+
+<body>
+
+    <header class="header container-one">
+        <div class="navbar">
+            <!-- Logo Section -->
+            <div class="logo">
+                <div class="logo-one"><a href="./index.html"><img src="./assets/images/logos/codegirls.logo.png"
+                            alt="codegirls-logo"></a></div>
+                <div class="logo-two"><a href="./index.html"><img src="./assets/images/logos/award-winning.svg"
+                            alt="award-winning"></a></div>
+            </div>
+
+            <!-- Desktop Navigation -->
+            <div class="nav-center">
+                <nav class="menu">
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./pages/about.html">About</a></li>
+                        <li><a href="#programs">Programs</a></li>
+                        <li><a href="./pages/our-team.html">Our Team</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <!-- Contact Button -->
+            <a href="#contact" class="contact-btn">Contact Us</a>
+
+            <!-- Mobile Hamburger -->
+            <button class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobileMenu">
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./pages/about.html">About</a></li>
+                <li><a href="#programs">Programs</a></li>
+                <li><a href="./pages/our-team.html">Our Team</a></li>
+            </ul>
+            <a href="#contact" class="contact-btn mobile-contact-btn">Contact Us</a>
+        </div>
+    </header>
+
+
+    <main>
+        <section>
+            <div class="hero-section container-one">
+                <div class="hero-heading">
+                    <h1>Educate a <span class="grn-text">women empower</span> a generation</h1>
+                    <p>Skills today.Opportunities tomorrow</p>
+                    <button type="button" class="apply button">JOIN NOW</button>
+
+                </div>
+                <div class="overlay"></div>
+
+
+            </div>
+
+            <!-- About -->
+
+            <div class="about-cg container-one">
+
+                <div class="about-cg-box">
+                    <div class="about-cg-boxes ">
+                        <div class="color line-grn"></div>
+                        <h2>Support</h2>
+                        <p>
+                            CodeGirls is more than coding — it&apos;s where every learner finds support, mentorship and
+                            confidence to overcome challenges.
+                        </p>
+                        <div class="about-cg-boxes-overlay-one"></div>
+
+                    </div>
+                    <div class="about-cg-boxes ">
+                        <div class="color line-blue"></div>
+                        <h2>Future ready skills</h2>
+                        <p>Learners gain practical tech and problem-solving skills that prepare them for the jobs of
+                            tomorrow.Every lesson builds independence.
+                        </p>
+
+                        <div class="about-cg-boxes-overlay-two"></div>
+
+                    </div>
+                    <div class="about-cg-boxes ">
+                        <div class="color line-yell"></div>
+                        <h2>Cape Town Based</h2>
+                        <p>Proudly based in Cape Town, we nurture local talent, inspire innovation,and connect learners
+                            with the skills to thrive in tech.
+                        </p>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- Course section -->
+        <section id="programs">
+            <div class="course-section container-one ">
+                <div class="course-main-container">
+                    <div class="course-head">
+                        <p>OUR MODULES</p>
+                        <h2>Leading the way for <span class="grn-text">women</span> in tech</h2>
+                        <p>From first step to firt project- we've got you covered</p>
+                    </div>
+                    <div class="course-container">
+                        <div class="course">
+                            <h2>PHASE 01</h2>
+                            <h2>Front End Development</h2>
+                            <p>Master the fundamentals of web development and create beautiful, interactive user
+                                interfaces.
+                            </p>
+                            <h3>Technologies Covered:</h3>
+                            <ul class="techstack">
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>Javascript</li>
+                                <li>Jquery</li>
+                                <li>Business</li>
+                            </ul>
+                            <h3>Key Learning Outcomes:</h3>
+                            <ul class="outcomes">
+                                <li>Build responive website</li>
+                                <li>Create interactive user interfaces</li>
+                                <li>Text</li>
+                                <li>Final Viva project</li>
+                            </ul>
+                            <button type="button" class="start-track ">JOIN NOW</button>
+                        </div>
+                        <div class="course">
+                            <h2 id="module">PHASE 02</h2>
+                            <h2>Full Stack Development</h2>
+                            <p>Build complete web applications from front-end to back-end with Python and Django.</p>
+                            <h3>Technologies Covered:</h3>
+                            <ul class="techstack list-two">
+                                <li>Python</li>
+                                <li>Django</li>
+                                <li>SQL</li>
+                            </ul>
+                            <h3>Key Learning Outcomes:</h3>
+                            <ul class="outcomes">
+                                <li>Develop full-stack web applications</li>
+                                <li>Master database design and management</li>
+                                <li>Build secure, scalable APIs</li>
+                                <li>Deploy applications to production</li>
+                            </ul>
+                            <button type="button" class="start-track blue-btn">JOIN NOW</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- impact -->
+        <section>
+            <div class="impact-container container-one">
+                <div class="impact-head">
+                    <p>OUR IMPACT</p>
+                    <h2>Making a difference</h2>
+                    <p>Codegirls was founded by <b>ConulNet Corporation</b> with <b>United Global Initiative</b> and
+                        <b>WomenInPK</b> to create possibilities that transform live through tech.
+                    </p>
+                </div>
+                <div class="student-video">
+                    <video controls autoplay loop>
+                        <source src="./assets/video/naafiah.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="partners">
+                    <img src="./assets/images/logos/Consulnet-Logo.png" alt="consulnet logo">
+                    <img src="./assets/images/logos/JFFUGI_LOGO.png" alt="United global initiative">
+                    <img src="./assets/images/logos/womenintech-logo.png" alt="womenintechpk">
+                </div>
+            </div>
+        </section>
+
+        <section class="swiper testimonial-swiper ">
+            <div class="testimonial-head impact-head">
+                <p>TESTIMONIALS</p>
+                <h2>What our students say about us</h2>
+
+            </div>
+            <div class="swiper-wrapper">
+
+                <!-- Slide 1 -->
+                <div class="swiper-slide">
+                    <div class="testimonial-grid">
+                        <div class="testimonial wide">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, consequuntur? Enim quas
+                                animi et illo veniam, omnis recusandae cupiditate repellendus? Nemo illum enim
+                                blanditiis rem incidunt iste inventore deserunt sint.</p>
+                        </div>
+                        <div class="testimonial small">
+
+                            <img src="./assets/images/cohort-1/IMG_20250913_121358.jpg" alt="Student 2">
+                        </div>
+                        <div class="testimonial tall">
+                            <p>"Amazing experience with top-notch support!"</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="swiper-slide">
+                    <div class="testimonial-grid grid-two">
+
+                        <div class="testimonial small">
+                            <img src="./assets/images/cohort-1/IMG_20250913_121346.jpg" alt="Customer 7">
+                        </div>
+                        <div class="testimonial tall">
+                            <p>"This testimonial has a lot more text to show how a longer ."</p>
+                            <img src="https://via.placeholder.com/150" alt="Customer 8">
+                        </div>
+                        <div class="testimonial wide">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, consequuntur? Enim quas
+                                animi et illo veniam, omnis recusandae cupiditate repellendus? Nemo illum enim
+                                blanditiis rem incidunt iste inventore deserunt sint.</p>
+                        </div>
+                        <!--  -->
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Pagination -->
+            <div class="swiper-pagination"></div>
+        </section>
+
+
+
+
+
+
+
+        <section class="faq-section container-one">
+            <div class="faq-head impact-head">
+                <p>FAQ</p>
+                <h2>Everything you need to know</h2>
+            </div>
+            <div class="accordion">
+                <div class="accordion-item">
+                    <div class="accordion-header">Who can join the program? <i class="arrow"></i></div>
+                    <div class="accordion-content">
+                        <p>Answer to question 1 goes here. You can write any text or HTML content inside.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header">Do I need prior coding experience? <i class="arrow"></i></div>
+                    <div class="accordion-content">
+                        <p>Answer to question 2 goes here. You can write any text or HTML content inside.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header">How do I apply <i class="arrow"></i></div>
+                    <div class="accordion-content">
+                        <p>Answer to question 3 goes here. You can write any text or HTML content inside.</p>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+
+        <section class="contact-section">
+            <div class="cohort3-img ">
+                <img src="./assets/images/Cohort3/cohort-3.jpg" alt="cohort3">
+            </div>
+            <div class="cta-section">
+                <h2>Join our next cohort-build <span class="yellow-text">your future</span></h2>
+
+                <form class="contact-form" id="contactForm">
+                    <p>Start your journey with us</p>
+
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+                    <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" required>
+
+                    <button type="submit">Send</button>
+                    <!-- <div class="success-message" id="successMessage">Thank you! Your message has been sent.</div> -->
+                </form>
+        </section>
+    </main>
+    <div class="footer-reveal-container">
+        <!-- <div class="footer-spacer"></div> -->
+        <footer class="footer container-one">
+            <div class="footer-head">
+                <img src="./assets/images/logos/codegirls.logo.png" alt="codegirls-logo">
+                <p>Our student voices reflect the heart of Codegirls-their stories 
+                    of growth and empowerment show how tech skills open doors to new
+                    opportunities.
+                </p>
+            </div>
+            <div class="footer-info">
+                <div class="footer-links">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li>About us</li>
+                        <li>Programs</li>
+                        <li>FAQ</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Contact Us</h4>
+                    <address>
+                        <p>Cape Town </p>
+                        
+                        <a href="mailto:info@codegirls.pro">info@codegirls.pro</a> <br>
+                        <a href="tel:+270814 451 5347">+270814 451 5347</a>
+                    </address>
+                    <p>codegirls@gmail.com</p>
+                    <button class="apply">Get in touch</button>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright &copy; 2025 Your Company Name. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./assets/script/script.js"></script>
+</body>
+
+</html>

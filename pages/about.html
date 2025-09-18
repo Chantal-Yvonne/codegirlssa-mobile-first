@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/style/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <title>Codegirls SA</title>
+
+</head>
+
+<body>
+
+    <header class="header container-one">
+        <div class="navbar">
+            <!-- Logo Section -->
+            <div class="logo">
+                <div class="logo-one"><a href="../index.html"><img src="../assets/images/logos/codegirls.logo.png"
+                            alt="codegirls-logo"></a></div>
+                <div class="logo-two"><a href="../index.html"><img src="../assets/images/logos/award-winning.svg"
+                            alt="award-winning"></a></div>
+            </div>
+            <!-- Desktop Navigation -->
+            <div class="nav-center">
+                <nav class="menu">
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../pages/about.html">About</a></li>
+                        <li><a href="#programs">Programs</a></li>
+                        <li><a href="../pages/our-team.html">Our Team</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <!-- Contact Button -->
+            <a href="#contact" class="contact-btn">Contact Us</a>
+
+            <!-- Mobile Hamburger -->
+            <button class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobileMenu">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../pages/about.html">About</a></li>
+                <li><a href="#programs">Programs</a></li>
+                <li><a href="../pages/our-team.html">Our Team</a></li>
+            </ul>
+            <a href="#contact" class="contact-btn mobile-contact-btn">Contact Us</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="about-header container-one">
+            <h1>Changing Lives with Codegirls</h1>
+            <img src="../assets/images/Cohort3/peers.jpg" alt="">
+        </section>
+        <section class="our-story impact-head container-one">
+            <p>OUR STORY</p>
+            <h2>Our Journey:Empowering Girls Through Code</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas porro hic accusamus similique vitae
+                adipisci? Veniam tempore neque quidem? Similique unde molestias rem ab hic deleniti, atque deserunt vero
+                fugiat.</p>
+                <div class="about-cg-box about-us-values">
+                    <div class="about-cg-boxes box ">
+                        <h2>Support</h2>
+                        <p>
+                            CodeGirls is more than coding — it&apos;s where every learner finds support, mentorship and
+                            confidence to overcome challenges.
+                        </p>
+
+                    </div>
+                    <div class="about-cg-boxes box">
+                        <h2>Future ready skills</h2>
+                        <p>Learners gain practical tech and problem-solving skills that prepare them for the jobs of
+                            tomorrow.Every lesson builds independence.
+                        </p>
+
+
+                    </div>
+                    <div class="about-cg-boxes box">
+                        <h2>Cape Town Based</h2>
+                        <p>Proudly based in Cape Town, we nurture local talent, inspire innovation,and connect learners
+                            with the skills to thrive in tech.
+                        </p>
+                    </div>
+        </section>
+        <section class="leaders our-story container-one">
+            <h2>Our Leadership</h2>
+            <div class="leader-images">
+                <div class="leader-img">
+                    <img src="../assets/images/Cohort3/thelma.jpg" alt="Dr.Walji">
+                    <div class="leader-name">
+                        <p>Chantal Amos</p>
+                        <p>Chantal Amos</p>
+                    </div>
+
+                </div>
+                <div class="leader-img">
+                    <img src="../assets/images/Cohort3/Screenshot_20250914_100333_com_instagram_android_InstagramMainActivity_edit_51305735617519.jpg" alt="">
+                    <div class="leader-name">
+                        <p>Chantal Amos</p>
+                        <p>Chantal Amos</p>
+                    </div>
+                </div>
+                <div class="leader-img">
+                    <img src="../assets/images/Cohort3/Screenshot_20250914_100333_com_instagram_android_InstagramMainActivity_edit_51305735617519.jpg" alt="">
+                    <div class="leader-name">
+                        <p>Chantal Amos</p>
+                        <p>Chantal Amos</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section class="contact-section">
+            <div class="cohort3-img ">
+                <img src="../assets/images/Cohort3/cohort-3.jpg" alt="cohort3">
+            </div>
+            <div class="cta-section">
+                <h2>Join our next cohort-build <span class="yellow-text">your future</span></h2>
+
+                <form class="contact-form" id="contactForm">
+                    <p>Start your journey with us</p>
+
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+                    <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" required>
+
+                    <button type="submit">Send</button>
+                    <!-- <div class="success-message" id="successMessage">Thank you! Your message has been sent.</div> -->
+                </form>
+            </section>
+
+    <div class="footer-reveal-container">
+        <!-- <div class="footer-spacer"></div> -->
+        <footer class="footer container-one">
+            <div class="footer-head">
+                <img src="./assets/images/logos/codegirls.logo.png" alt="codegirls-logo">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur quasi officiis repellat
+                    voluptatibus
+                    rerum sapiente, itaque voluptatem asperiores dicta laboriosam. Quam consequuntur inventore,
+                    voluptatibus
+                    enim id vero delectus quaerat modi.</p>
+            </div>
+            <div class="footer-info">
+                <div class="footer-links">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li>About us</li>
+                        <li>Programs</li>
+                        <li>FAQ</li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Locations</h4>
+                    <address>
+                        Cape Town <br>
+                        <a href="mailto:info@codegirls.pro">info@codegirls.pro</a> <br>
+                        <a href="tel:+270814 451 5347">+270814 451 5347</a>
+                    </address>
+                    <address>
+                        Karachi <br>
+                        <a href="mailto:info@consulnet.net">mailto:info@consulnet.net</a> <br>
+                        <a href="tel:0333-3654348">0333-3654348</a>
+                    </address>
+                    <address>
+                        Skardu <br>
+                        <a href="mailto:">mailto:info@consulnet.net</a> <br>
+                        <a href="tel:0333-3654348">0333-3654348</a>
+                    </address>
+                </div>
+                <div class="footer-links">
+                    <h4>Contact Us</h4>
+                    <p>codegirls@gmail.com</p>
+                    <button class="apply">Get in touch</button>
+                </div>
+            </div>
+            <div class="copyright">
+
+                <p>Copyright &copy; 2025 Your Company Name. All rights reserved.</p>
+
+
+            </div>
+        </footer>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="../assets/script/script.js"></script>
+</body>
+
+</html>
