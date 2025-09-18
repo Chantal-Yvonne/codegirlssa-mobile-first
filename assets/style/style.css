@@ -292,8 +292,8 @@ body {
 }
 
 .about-cg-box {
-    height: 725px;
-    border: 1px solid orange;
+    height: 920px;
+    /* border: 1px solid orange; */
 }
 .about-cg-boxes {
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
@@ -344,9 +344,14 @@ body {
     background-color: var(--cg-yellow);
 }
 
+.line-red {
+    background-color: var(--cg-orange);
+}
+
 /* ==========COURSE==========*/
 .course-section {
     background: var(--cg-white);
+    padding: 2rem 0 0;
 }
 
 .course-section .course-head {
@@ -367,7 +372,8 @@ body {
     font-size: var(--font-32--);
     font-weight: 700;
     color: var(--cg-text);
-    margin: 1rem 0;
+    /* margin: 1rem 0; */
+    line-height: 1.2;
 }
 
 .course-section .course-head p {
@@ -618,16 +624,16 @@ body {
     padding: 0;
 }
 
-/* .testimonial.medium { height: 220px; } */
+/* .testimonial.medium { height: 220px; }
 .testimonial.wide {
-    grid-column: span 2;
+    grid-column: span 1;
     height: 180px;
 }
 
 .testimonial.tall {
-    grid-row: span 2;
+    grid-row: span 1;
     height: 180px;
-}
+} */
 
 /* Pagination bullets */
 .swiper-pagination-bullet {
