@@ -15,6 +15,20 @@
 //   });
 // });
 
+// menu arrow
+  document.addEventListener("DOMContentLoaded", function() {
+    const dropdown = document.querySelector(".dropdown");
+    const arrow = dropdown.querySelector(".drop-arrow");
+
+    dropdown.addEventListener("click", function(e) {
+      e.preventDefault(); // stop link from reloading page
+      dropdown.classList.toggle("active");
+      arrow.classList.toggle("rotate");
+    });
+  });
+
+
+
 function toggleMenu() {
   const mobileMenu = document.getElementById('mobileMenu');
   const hamburger = document.querySelector('.hamburger');
@@ -35,17 +49,22 @@ document.addEventListener('click', function(event) {
   }
 });
 
-const swiper = new Swiper('.testimonial-swiper', {
-  loop: true,
-  speed: 600,
-  slidesPerView: 1,       // each slide uses its own width
-  centeredSlides: false,        // active slide is centered
-  spaceBetween: 30,            // spacing between slides
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-  },
-  autoHeight: false,           // prevents slide jump
+$(document).ready(function(){
+  $('.testimonials-carousel').owlCarousel({
+    loop: true,
+    margin: 30,
+    nav: true,
+    dots: true,
+    autoplay: true,
+    autoplayTimeout: 5000,
+    autoplayHoverPause: true,
+    smartSpeed: 800,
+    responsive: {
+      0: { items: 1 },
+      768: { items: 2 },
+      1024: { items: 3 }
+    }
+  });
 });
 
 
@@ -60,4 +79,38 @@ $(document).ready(function() {
     $(this).next('.accordion-content').slideToggle();
     $(this).toggleClass('active');
   });
-});
+
+  // form 
+  
+      // jQuery Validation rules
+      $("#contactForm").validate({
+        rules: {
+          fullname: {
+            required: true,
+            minlength: 3
+          },
+          email: {
+            required: true,
+            email: true
+          },
+          role: {
+            required: true
+          }
+        },
+        messages: {
+          fullname: {
+            required: "Please enter your name",
+            minlength: "Name must be at least 3 characters"
+          },
+          email: {
+            required: "Please enter your email",
+            email: "Enter a valid email address"
+          },
+          role: {
+            required: "Please select a option"
+          }
+        },
+       
+      });
+    });
+

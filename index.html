@@ -6,8 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/style/style.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <!-- Swiper CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.19.5/jquery.validate.min.js"></script>
+
+    <!-- Owl Carousel CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
 
     <title>Codegirls SA</title>
 
@@ -19,7 +22,7 @@
         <div class="navbar">
             <!-- Logo Section -->
             <div class="logo">
-                <div class="logo-one"><a href="./index.html"><img src="./assets/images/logos/codegirls.logo.png"
+                <div class="logo-one logo-lg"><a href="./index.html"><img src="./assets/images/logos/codegirls.logo.png"
                             alt="codegirls-logo"></a></div>
                 <div class="logo-two"><a href="./index.html"><img src="./assets/images/logos/award-winning.svg"
                             alt="award-winning"></a></div>
@@ -29,10 +32,18 @@
             <div class="nav-center">
                 <nav class="menu">
                     <ul>
-                        <li><a href="./index.html">Home</a></li>
                         <li><a href="./pages/about.html">About</a></li>
                         <li><a href="#programs">Programs</a></li>
                         <li><a href="./pages/our-team.html">Our Team</a></li>
+                        <li class="dropdown">
+                            <a href="./index.html">Locations <span class="drop-arrow">&#9662;</span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Cape Town</a></li>
+                                <li><a href="#">Karachi</a></li>
+                                <li><a href="#">Lahore</a></li>
+                                <li><a href="#">Johannesburg</a></li>
+                            </ul>
+                        </li>
                     </ul>
                 </nav>
             </div>
@@ -54,7 +65,7 @@
                 <li><a href="./index.html">Home</a></li>
                 <li><a href="./pages/about.html">About</a></li>
                 <li><a href="#programs">Programs</a></li>
-                <li><a href="./pages/our-team.html">Our Team</a></li>
+                <li><a href="./index.html">Locations</a></li>
             </ul>
             <a href="#contact" class="contact-btn mobile-contact-btn">Contact Us</a>
         </div>
@@ -64,9 +75,10 @@
     <main>
         <section>
             <div class="hero-section container-one">
-                <div class="hero-heading">
-                    <h1>Educate a <span class="grn-text">women empower</span> a generation</h1>
-                    <p>Skills today.Opportunities tomorrow</p>
+                <div class="hero-heading ">
+                    <h1>Educate a <span class="grn-text">women, empower</span> a generation</h1>
+                    <p> Through free coding and business skills training, Codegirls help women to step into the world of
+                        technology with confidence.</p>
                     <button type="button" class="apply button">JOIN NOW</button>
 
                 </div>
@@ -102,9 +114,10 @@
                     </div>
                     <div class="about-cg-boxes ">
                         <div class="color line-yell"></div>
-                        <h2>Cape Town Based</h2>
-                        <p>Proudly based in Cape Town, we nurture local talent, inspire innovation,and connect learners
-                            with the skills to thrive in tech.
+                        <h2>Soft Skills Training</h2>
+                        <p>Build essential skills like teamwork, communication, problem-solving, and leadership. These
+                            qualities help you thrive in group projects, stand out in interviews, and succeed in the
+                            workplace.
                         </p>
 
                     </div>
@@ -127,7 +140,7 @@
                     <div class="course-head">
                         <p>OUR MODULES</p>
                         <h2>Leading the way for <span class="grn-text">women</span> in tech</h2>
-                        <p>From first step to firt project- we've got you covered</p>
+                        <p>From first step to first project- we've got you covered</p>
                     </div>
                     <div class="course-container">
                         <div class="course">
@@ -188,7 +201,7 @@
                     </p>
                 </div>
                 <div class="student-video">
-                    <video controls autoplay loop>
+                    <video controls autoplay loop poster="./assets/images/Cohort3/peers.jpg">
                         <source src="./assets/video/naafiah.mp4" type="video/mp4">
                     </video>
                 </div>
@@ -200,58 +213,67 @@
             </div>
         </section>
 
-        <section class="swiper testimonial-swiper ">
+        <section class="swiper testimonial-swiper container-one">
             <div class="testimonial-head impact-head">
                 <p>TESTIMONIALS</p>
                 <h2>What our students say about us</h2>
 
             </div>
-            <div class="swiper-wrapper">
+          <div class="testimonials-section">
+    <div class="section-header">
+      <h2>Testimonials</h2>
+      <p>What Our Clients Say About Us</p>
+    </div>
 
-                <!-- Slide 1 -->
-                <div class="swiper-slide">
-                    <div class="testimonial-grid">
-                        <div class="testimonial wide">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, consequuntur? Enim quas
-                                animi et illo veniam, omnis recusandae cupiditate repellendus? Nemo illum enim
-                                blanditiis rem incidunt iste inventore deserunt sint.</p>
-                        </div>
-                        <div class="testimonial small">
-
-                            <img src="./assets/images/cohort-1/IMG_20250913_121358.jpg" alt="Student 2">
-                        </div>
-                        <div class="testimonial tall">
-                            <p>"Amazing experience with top-notch support!"</p>
-                        </div>
-
-                    </div>
-                </div>
-
-                <!-- Slide 2 -->
-                <div class="swiper-slide">
-                    <div class="testimonial-grid grid-two">
-
-                        <div class="testimonial small">
-                            <img src="./assets/images/cohort-1/IMG_20250913_121346.jpg" alt="Customer 7">
-                        </div>
-                        <div class="testimonial tall">
-                            <p>"This testimonial has a lot more text to show how a longer ."</p>
-                            <img src="https://via.placeholder.com/150" alt="Customer 8">
-                        </div>
-                        <div class="testimonial wide">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, consequuntur? Enim quas
-                                animi et illo veniam, omnis recusandae cupiditate repellendus? Nemo illum enim
-                                blanditiis rem incidunt iste inventore deserunt sint.</p>
-                        </div>
-                        <!--  -->
-
-                    </div>
-                </div>
-
+    <div class="owl-carousel testimonials-carousel">
+      <!-- Testimonial 1 -->
+      <div class="testimonial-item">
+        <div class="testimonial-content">
+          <p class="testimonial-text">
+            "Working with this team has been an absolute pleasure. Their attention to detail and commitment to excellence is unmatched. Highly recommended!"
+          </p>
+          <div class="testimonial-author">
+            <div class="author-image">
+              <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&h=150&fit=crop" alt="Sarah Johnson">
             </div>
+            <div class="author-info">
+              <h4>Sarah Johnson</h4>
+              <p>CEO, TechCorp</p>
+              <div class="rating">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
-            <!-- Pagination -->
-            <div class="swiper-pagination"></div>
+      <!-- Add more testimonials (copy this block and change content) -->
+      <div class="testimonial-item">
+        <div class="testimonial-content">
+          <p class="testimonial-text">
+            "Exceptional quality and outstanding service! The team went above and beyond to ensure success."
+          </p>
+          <div class="testimonial-author">
+            <div class="author-image">
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop" alt="Michael Chen">
+            </div>
+            <div class="author-info">
+              <h4>Michael Chen</h4>
+              <p>Founder, StartupHub</p>
+              <div class="rating">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
         </section>
 
 
@@ -288,34 +310,53 @@
 
             </div>
         </section>
-
-        <section class="contact-section">
-            <div class="cohort3-img ">
-                <img src="./assets/images/Cohort3/cohort-3.jpg" alt="cohort3">
-            </div>
-            <div class="cta-section">
-                <h2>Join our next cohort-build <span class="yellow-text">your future</span></h2>
-
-                <form class="contact-form" id="contactForm">
-                    <p>Start your journey with us</p>
-
-                    <input type="text" id="name" name="name" placeholder="Your Name" required>
-
-                    <input type="email" id="email" name="email" placeholder="Your Email" required>
-
-                    <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" required>
-
-                    <button type="submit">Send</button>
-                    <!-- <div class="success-message" id="successMessage">Thank you! Your message has been sent.</div> -->
-                </form>
-        </section>
     </main>
-    <div class="footer-reveal-container">
+    <footer class="footer-section container-one">
+        <div class="contact-info">
+
+            <div class="col">
+                <div class="contact-section">
+                    <div class="cohort3-img ">
+                        <img src="./assets/images/Cohort3/cohort-3.jpg" alt="cohort3">
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+
+                <div class="cta-section">
+
+                    <form class="contact-form" id="contactForm">
+                        <h2>Join our next cohort-build <span class="yellow-text">your future</span></h2>
+
+                        <!-- <p>Start your journey with us</p> -->
+
+                        <input type="text" id="fullname" name="fullname" placeholder="Your Name" required>
+
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+                        <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" required>
+
+                        <select name="info-options" id="info-options" required>
+                            <option value="">What would you like to enquire about</option>
+                            <option value="general">General</option>
+                            <option value="apply">Apply</option>
+                        </select>
+                        <textarea name="message" id="message" cols="46" rows="10" placeholder="Your message"></textarea>
+
+                        <button type="submit">Send</button>
+                        <!-- <div class="success-message" id="successMessage">Thank you! Your message has been sent.</div> -->
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- <div class="footer-reveal-container"> -->
         <!-- <div class="footer-spacer"></div> -->
-        <footer class="footer container-one">
+        <div class="footer container-one">
             <div class="footer-head">
                 <img src="./assets/images/logos/codegirls.logo.png" alt="codegirls-logo">
-                <p>Our student voices reflect the heart of Codegirls-their stories 
+                <p>Our student voices reflect the heart of Codegirls-their stories
                     of growth and empowerment show how tech skills open doors to new
                     opportunities.
                 </p>
@@ -329,12 +370,12 @@
                         <li>FAQ</li>
                     </ul>
                 </div>
-                
+
                 <div class="footer-links">
                     <h4>Contact Us</h4>
                     <address>
                         <p>Cape Town </p>
-                        
+
                         <a href="mailto:info@codegirls.pro">info@codegirls.pro</a> <br>
                         <a href="tel:+270814 451 5347">+270814 451 5347</a>
                     </address>
@@ -343,13 +384,14 @@
                 </div>
             </div>
             <div class="copyright">
-                <p>Copyright &copy; 2025 Your Company Name. All rights reserved.</p>
+                <p>Copyright &copy; 2025 Codegirls. All rights reserved.</p>
             </div>
-        </footer>
-    </div>
+        </div>
 
+    </footer>
+    <!-- </div> -->
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="./assets/script/script.js"></script>
 </body>
 
